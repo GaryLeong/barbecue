@@ -156,11 +156,11 @@ const goHome = () => {
 };
 
 const goToMenu = () => {
-  uni.switchTab({ url: '/pages/menu/menu' });
+  uni.switchTab({ url: '/pages/menu/index' });
 };
 
 const goToProfile = () => {
-  uni.switchTab({ url: '/pages/profile/profile' });
+  uni.switchTab({ url: '/pages/profile/index' });
 };
 
 const urgeCook = () => {

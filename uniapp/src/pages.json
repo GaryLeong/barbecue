@@ -7,19 +7,19 @@
 			}
 		},
 		{
-			"path": "pages/menu/menu",
+			"path": "pages/menu/index",
 			"style": {
 				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path": "pages/checkout/checkout",
+			"path": "pages/checkout/index",
 			"style": {
 				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path": "pages/profile/profile",
+			"path": "pages/profile/index",
 			"style": {
 				"navigationStyle": "custom"
 			}
@@ -44,13 +44,13 @@
 				"selectedIconPath": "static/images/1.svg"
 			},
 			{
-				"pagePath": "pages/menu/menu",
+				"pagePath": "pages/menu/index",
 				"text": "点餐",
 				"iconPath": "static/images/2.svg",
 				"selectedIconPath": "static/images/2.svg"
 			},
 			{
-				"pagePath": "pages/profile/profile",
+				"pagePath": "pages/profile/index",
 				"text": "我的",
 				"iconPath": "static/images/3.svg",
 				"selectedIconPath": "static/images/3.svg"

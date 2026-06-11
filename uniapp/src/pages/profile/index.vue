@@ -166,11 +166,11 @@
 
 <script setup lang="ts">
 const goHome = () => {
-  uni.switchTab({ url: '/pages/index/index' });
+  uni.switchTab({ url: '/pages/index' });
 };
 
 const goMenu = () => {
-  uni.switchTab({ url: '/pages/menu/menu' });
+  uni.switchTab({ url: '/pages/menu' });
 };
 
 const goPoints = () => {

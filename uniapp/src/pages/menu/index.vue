@@ -166,7 +166,7 @@ const goHome = () => {
 };
 
 const goToProfile = () => {
-  uni.switchTab({ url: '/pages/profile/profile' });
+  uni.switchTab({ url: '/pages/profile/index' });
 };
 </script>
 

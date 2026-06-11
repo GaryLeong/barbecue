@@ -230,19 +230,19 @@
 
   const goToMenu = () => {
     uni.switchTab({
-      url: "/pages/menu/menu",
+      url: "/pages/menu/index",
     });
   };
 
   const goToCheckout = () => {
     uni.navigateTo({
-      url: "/pages/checkout/checkout",
+      url: "/pages/checkout/index",
     });
   };
 
   const goToProfile = () => {
     uni.switchTab({
-      url: "/pages/profile/profile",
+      url: "/pages/profile/index",
     });
   };
 
