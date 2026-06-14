@@ -1,28 +1,5 @@
 <template>
   <view class="page">
-    <!-- 自定义导航栏 -->
-    <view class="header">
-      <view class="header-left">
-        <image class="header-icon"
-               src="/static/images/5.svg"
-               mode="aspectFit" />
-        <view class="header-info">
-          <view class="table-no">
-            <text class="table-text">当前桌号: B12</text>
-            <image class="arrow-icon"
-                   src="/static/images/6.svg"
-                   mode="aspectFit" />
-          </view>
-          <text class="brand">Beijing BBQ</text>
-        </view>
-      </view>
-      <view class="header-right">
-        <image class="avatar"
-               src="/static/images/7.svg"
-               mode="aspectFit" />
-      </view>
-    </view>
-
     <!-- 主体内容 -->
     <scroll-view class="content"
                  scroll-y
@@ -248,9 +225,9 @@
 
   onMounted(() => {
     const sysInfo = uni.getSystemInfoSync();
-    // 减去header(76) + checkout(69) + safeArea
+    // 减去checkout(69) + safeArea
     const safeBottom = sysInfo.safeAreaInsets?.bottom || 0;
-    scrollHeight.value = sysInfo.windowHeight - 76 - 69 - safeBottom;
+    scrollHeight.value = sysInfo.windowHeight - 69 - safeBottom;
   });
 </script>
 
@@ -262,77 +239,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-  }
-
-  /* Header */
-  .header {
-    height: 76px;
-    background: rgba(248, 249, 250, 0.9);
-    backdrop-filter: blur(2px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    padding-top: var(--status-bar-height, 0);
-    flex-shrink: 0;
-  }
-
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .header-icon {
-    width: 20px;
-    height: 20px;
-    margin-top: 12px;
-  }
-
-  .header-info {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .table-no {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .table-text {
-    font-size: 12px;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    color: #58423c;
-  }
-
-  .arrow-icon {
-    width: 12px;
-    height: 12px;
-  }
-
-  .brand {
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 700;
-    color: #a43716;
-  }
-
-  .header-right {
-    width: 36px;
-    height: 36px;
-    background: #e7e8e9;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .avatar {
-    width: 20px;
-    height: 20px;
   }
 
   /* Content */

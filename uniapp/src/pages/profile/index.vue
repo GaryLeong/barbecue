@@ -1,17 +1,5 @@
 <template>
   <view class="page">
-    <!-- 顶部导航栏 -->
-    <view class="header">
-      <view class="header-left">
-        <image class="fire-icon" src="/static/profile/4.svg" mode="aspectFit" />
-        <text class="brand">Beijing BBQ</text>
-      </view>
-      <view class="header-right">
-        <image class="header-icon" src="/static/profile/5.svg" mode="aspectFit" />
-        <image class="header-icon" src="/static/profile/6.svg" mode="aspectFit" />
-      </view>
-    </view>
-
     <!-- 主体内容 -->
     <scroll-view class="content" scroll-y>
       <!-- 用户信息 -->
@@ -225,50 +213,6 @@ const logout = () => {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-}
-
-/* Header */
-.header {
-  height: 66.59px;
-  background: rgba(248, 249, 250, 0.8);
-  border-bottom: 1px solid #E1E3E4;
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  padding-top: var(--status-bar-height, 0);
-  flex-shrink: 0;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.fire-icon {
-  width: 20px;
-  height: 20px;
-  margin-top: 2px;
-}
-
-.brand {
-  font-size: 24px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 700;
-  color: #A43716;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.header-icon {
-  width: 20px;
-  height: 20px;
 }
 
 /* Content */
